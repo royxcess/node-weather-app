@@ -10,7 +10,7 @@ const forecast = (longnitude, latitude, callback)=> {
         } else if (body.error) {
             console.log(chalk.red('Unable to find location! Try with a other location'),undefined)
         }else {
-            callback(undefined,body.current.weather_descriptions[0]+'. It is currently '+body.current.temperature+' degrees out. It feels like '+body.current.feelslike+' degrees out and there is a '+body.current.precip+'% chance of rain')
+            callback(undefined,body.current.weather_descriptions[0]+'. It is currently '+body.current.temperature+' degrees out and it feels like '+body.current.feelslike+' degrees. The overall humidity is ' + body.current.humidity +'%. There is a '+body.current.precip+'% chance of rain today.')
         }
     })
 }
