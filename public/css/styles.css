@@ -1,0 +1,65 @@
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: gray;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+header a {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.image {
+    width: 250px;
+}
+
+.image:hover{
+    opacity: 0.5;
+}
+
+body { 
+    background-image: url('/img/rainy.png');
+}
+
+input {
+    border: 1px solid #ccccb3;
+    padding: 8px;
+    border-style: ridge;
+}
+
+button {
+    border : 1px solid #ccccb3;
+    padding : 8px;
+    cursor: pointer;
+    background-color: darkslategrey;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: floralwhite;
+}
